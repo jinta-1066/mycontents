@@ -448,19 +448,7 @@
       </div>
       <div class="pagetop">
         <a class="pagetop_a" href="#" target="_self"><div class="pagetop_d"></div></a>
-        <script>
-          const stickyElement = document.querySelector('.pagetop_a');
-          
-          function onScroll() {
-            if (window.pageYOffset > 300) {
-              stickyElement.classList.add('visible'); //スクロール開始時に表示
-            } else {
-              stickyElement.classList.remove('visible'); //画面の一番上にいると非表示
-            }
-          }
-          
-          window.addEventListener('scroll', onScroll);
-    </script>
+        <script src="/mycontents/script-pagetop.js"></script>
       </div>
     </div>
     <div class="main_pagetop">
