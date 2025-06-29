@@ -104,8 +104,8 @@
   content: '';
   width: 11px;
   height: 11px;
-  border-right: 2.5px solid #000;
-  border-bottom: 2.5px solid #000;
+  border-right: 2.75px solid #000;
+  border-bottom: 2.75px solid #000;
   transform: rotate(-45deg);
 }
 
