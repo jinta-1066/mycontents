@@ -39,6 +39,7 @@ html::-webkit-scrollbar:hover {
 
 ul { margin: 0; padding: 0;}
 li { list-style: none;}
+.no { display: none; }
 
 /* header */
 
@@ -280,12 +281,30 @@ li { list-style: none;}
       <div class="main_heading"><h1 class="heading">Anime List</h1></div>
       <div class="main_content">
         <nav class="main_nav_new">
-          <h2>New</h2>
-          <span>現在、新着アニメはありません。</span>
+          <h2>ON AIR</h2>
+          <span class="no">現在、放送中のアニメはありません。</span>
+          <dl class="main_dl_noopen">
+            <dt><a href="https://www.tbs.co.jp/anime/takopi_project/">
+              <img src="https://imgc.nxtv.jp/img/info/tit/00196/SID0196501.png?p=W320">
+              <span>タコピーの原罪</span>
+            </a></dt>
+          </dl>
+          <dl class="main_dl_noopen no">
+            <dt><a href="https://kaiju-no8.net">
+              <img src="https://imgc.nxtv.jp/img/info/tit/00200/SID0200169.png?p=W320">
+              <span>怪獣8号</span>
+            </a></dt>
+          </dl>
+          <dl class="main_dl_noopen no">
+            <dt><a href="https://sakamotodays.jp/">
+              <img src="https://imgc.nxtv.jp/img/info/tit/00163/SID0163171.png?p=W320">
+              <span>SAKAMOTO DAYS</span>
+            </a></dt>
+          </dl>
         </nav>
         <nav class="main_nav">
           <h2>All</h2>
-          <dl class="main_dl_open" style="display: none;">
+          <dl class="main_dl_open no">
             <input id="main_con_kimetsu" type="checkbox">
             <label for="main_con_kimetsu">
               <dt><a>
@@ -312,7 +331,7 @@ li { list-style: none;}
             <dd>
               <ul>
                 <li><a href="https://neverland-anime.com/1st/">約束のネバーランド</a></li>
-                <li style="display: none;"><a href="https://neverland-anime.com/">約束のネバーランド Season2</a></li>
+                <li class="no"><a href="https://neverland-anime.com/">約束のネバーランド Season2</a></li>
               </ul>
             </dd>
           </dl>
@@ -375,7 +394,7 @@ li { list-style: none;}
               <ul>
                 <li><a href="https://ichigoproduction.com/Season1/">【推しの子】Season1</a></li>
                 <li><a href="https://ichigoproduction.com/Season2/">【推しの子】Season2</a></li>
-                <li style="display: none;"><a href="https://ichigoproduction.com/Season3/">【推しの子】Season3</a></li>
+                <li class="no"><a href="https://ichigoproduction.com/Season3/">【推しの子】Season3</a></li>
               </ul>
             </dd>
           </dl>
@@ -390,7 +409,7 @@ li { list-style: none;}
               <ul>
                 <li><a href="https://spy-family.net/tvseries/episodes/index_season1.php">SPY×FAMILY Season1</a></li>
                 <li><a href="https://spy-family.net/tvseries/episodes/index.php">SPY×FAMILY Season2</a></li>
-                <li style="display: none;"><a href="">SPY×FAMILY Season3</a></li>
+                <li class="no"><a href="">SPY×FAMILY Season3</a></li>
               </ul>
             </dd>
           </dl>
@@ -399,13 +418,13 @@ li { list-style: none;}
             <label for="main_con_no8">
               <dt><a>
                 <img src="https://imgc.nxtv.jp/img/info/tit/00100/SID0100076.png?p=W320">
-                <img src="https://imgc.nxtv.jp/img/info/tit/00200/SID0200169.png?p=W320" style="display: none;">
+                <img src="https://imgc.nxtv.jp/img/info/tit/00200/SID0200169.png?p=W320" class="no">
                 <span>怪獣8号</span>
               </a></dt></label>
             <dd>
               <ul>
                 <li><a href="https://kaiju-no8.net/">怪獣8号 第1期</a></li>
-                <li style="display: none;"><a href="">怪獣8号 第2期</a></li>
+                <li class="no"><a href="">怪獣8号 第2期</a></li>
               </ul>
             </dd>
           </dl>
@@ -434,7 +453,7 @@ li { list-style: none;}
                 <li><a href="https://tokyo-revengers-anime.com/story/">東京リベンジャーズ 血のハロウィン編</a></li>
                 <li><a href="https://tokyo-revengers-anime.com/story/">東京リベンジャーズ 聖夜決戦編</a></li>
                 <li><a href="https://tokyo-revengers-anime.com/story/">東京リベンジャーズ 天竺編</a></li>
-                <li style="display: none;"><a href="https://tokyo-revengers-anime.com/story/">東京リベンジャーズ 三天戦争編</a></li>
+                <li class="no"><a href="https://tokyo-revengers-anime.com/story/">東京リベンジャーズ 三天戦争編</a></li>
               </ul>
             </dd>
           </dl>
@@ -448,7 +467,7 @@ li { list-style: none;}
             <dd>
               <ul>
                 <li><a href="https://aonohako-anime.com/">アオのハコ</a></li>
-                <li style="display: none;"><a href="">アオのハコ 第2期</a></li>
+                <li class="no"><a href="">アオのハコ 第2期</a></li>
               </ul>
             </dd>
           </dl>
@@ -476,7 +495,7 @@ li { list-style: none;}
             <dd>
               <ul>
                 <li><a href="https://medalist-pr.com/">メダリスト</a></li>
-                <li style="display: none;"><a href="">メダリスト 第2期</a></li>
+                <li class="no"><a href="">メダリスト 第2期</a></li>
               </ul>
             </dd>
           </dl>
@@ -490,7 +509,7 @@ li { list-style: none;}
             <dd>
               <ul>
                 <li><a href="https://frieren-anime.jp/">葬送のフリーレン</a></li>
-                <li style="display: none;"><a href="">葬送のフリーレン 第2期</a></li>
+                <li class="no"><a href="">葬送のフリーレン 第2期</a></li>
               </ul>
             </dd>
           </dl>
@@ -504,7 +523,7 @@ li { list-style: none;}
             <dd>
               <ul>
                 <li><a href="https://boukyaku-battery.com/">忘却バッテリー</a></li>
-                <li style="display: none;"><a href="">忘却バッテリー 第2期</a></li>
+                <li class="no"><a href="">忘却バッテリー 第2期</a></li>
               </ul>
             </dd>
           </dl>
@@ -547,7 +566,7 @@ li { list-style: none;}
                 <li><a href="https://danmachi.com/danmachi2/story/">ダンまちⅡ</a></li>
                 <li><a href="https://danmachi.com/danmachi3/story/">ダンまちⅢ</a></li>
                 <li><a href="https://danmachi.com/danmachi4/story/">ダンまちⅣ</a></li>
-                <li><a href="https://danmachi.com/danmachi5/story/">ダンまちⅤ</a></li>
+                <li class="no"><a href="https://danmachi.com/danmachi5/story/">ダンまちⅤ</a></li>
               </ul>
             </dd>
           </dl>
@@ -567,7 +586,7 @@ li { list-style: none;}
             <dd>
               <ul>
                 <li><a href="https://bst-anime.com/">BEASTARS 第1期</a></li>
-                <li style="display: none;"><a href="https://bst-anime.com/">BEASTARS 第2期</a></li>
+                <li class="no"><a href="https://bst-anime.com/">BEASTARS 第2期</a></li>
               </ul>
             </dd>
           </dl>
@@ -624,7 +643,7 @@ li { list-style: none;}
             <dd>
               <ul>
                 <li><a href="https://aooke-anime.com">青のオーケストラ</a></li>
-                <li style="display: none;"><a href="https://aooke-anime.com">青のオーケストラ 第2期</a></li>
+                <li class="no"><a href="https://aooke-anime.com">青のオーケストラ 第2期</a></li>
               </ul>
             </dd>
           </dl>
@@ -638,15 +657,9 @@ li { list-style: none;}
             <dd>
               <ul>
                 <li><a href="https://sh-anime.shochiku.co.jp/anime-sentai-daishikkaku/">戦隊大失格 1st Season</a></li>
-                <li style="display: none;"><a href="https://sh-anime.shochiku.co.jp/anime-sentai-daishikkaku/">戦隊大失格 2nd Season</a></li>
+                <li class="no"><a href="https://sh-anime.shochiku.co.jp/anime-sentai-daishikkaku/">戦隊大失格 2nd Season</a></li>
               </ul>
             </dd>
-          </dl>
-          <dl class="main_dl_noopen">
-            <dt><a href="https://www.tbs.co.jp/anime/takopi_project/">
-              <img src="https://imgc.nxtv.jp/img/info/tit/00196/SID0196501.png?p=W320">
-              <span>タコピーの原罪</span>
-            </a></dt>
           </dl>
           <dl class="main_dl_noopen">
             <dt><a href="https://ooyukiumi.net/episodes/">
@@ -658,6 +671,12 @@ li { list-style: none;}
             <dt><a href="https://www.kyotoanimation.co.jp/works/nichijou/">
               <img src="https://imgc.nxtv.jp/img/info/tit/00036/SID0036311.png?p=W320">
               <span>日常</span>
+            </a></dt>
+          </dl>
+          <dl class="main_dl_noopen">
+            <dt><a href="https://www.tbs.co.jp/anime/takopi_project/">
+              <img src="https://imgc.nxtv.jp/img/info/tit/00196/SID0196501.png?p=W320">
+              <span>タコピーの原罪</span>
             </a></dt>
           </dl>
           
