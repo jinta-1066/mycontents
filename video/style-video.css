@@ -116,7 +116,7 @@
   right: 20px;
   content: '';
   width: 18px;
-  height: 2px;
+  height: 2.5px;
   background: #000;
   transition: 0.25s;
 }
